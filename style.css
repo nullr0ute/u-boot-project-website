@@ -37,6 +37,12 @@ header div.header_title h1 small {
 	font-size: 11pt;
 }
 
+/* Header image */
+header div.header_title img {
+	width: 50px;
+	height: 50px;
+}
+
 /* Make it responsive */
 @media (max-width: 760px) {
 	header,
