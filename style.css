@@ -1,0 +1,64 @@
+/*
+ * Copyright (C) 2023, Ferass El Hafidi <vitali64pmemail@protonmail.com>
+ *
+ * SPDX-License-Identifier: GPL-2.0+
+ */
+
+body {
+	font-family: sans;
+	max-width: 120ch;
+	margin: 0 auto;
+	line-height: 1.5;
+	padding: 5px;
+}
+
+/* Flexbox magic */
+header,
+header div.header_title,
+header ul.header_links {
+	display: flex;
+	justify-content: space-between;
+}
+
+/* Header links */
+header ul.header_links {
+	list-style: none;
+}
+
+header ul li a.header_link {
+	margin: 10px;
+}
+
+/* Header text */
+header div.header_title h1 {
+	margin: 1px 5px;
+}
+header div.header_title h1 small {
+	font-size: 11pt;
+}
+
+/* Make it responsive */
+@media (max-width: 760px) {
+	header,
+	header ul.header_links {
+		flex-direction: column;
+	}
+
+	header ul.header_links {
+		list-style: disc;
+	}
+
+	header div.header_title {
+		justify-content: normal;
+	}
+}
+
+@media (max-width: 450px) {
+	header div.header_title h1 small {
+		display: block;
+	}
+	header div.header_title img {
+		width: 70px;
+		height: 70px;
+	}
+}
