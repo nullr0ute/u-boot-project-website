@@ -18,6 +18,7 @@ header div.header_title,
 header ul.header_links {
 	display: flex;
 	justify-content: space-between;
+	align-items: center;
 }
 
 /* Header links */
