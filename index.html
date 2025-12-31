@@ -4,6 +4,7 @@
 	<head>
 		<link rel="stylesheet" href="style.css">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8">
 		<link rel="icon" type="image/png" href="u-boot_logo.png">
 		<title>Das U-Boot: The Universal Boot Loader</title>
 	</head>
@@ -14,74 +15,116 @@
 				<h1>Das U-Boot <small><i>The Universal Boot Loader</i></small></h1>
 			</div>
 			<ul class="header_links">
-				<li><a href="https://source.denx.de/u-boot" class="header_link">Source code</a></li>
+				<li><a href="https://source.denx.de/u-boot" class="header_link">Source</a></li>
+				<li><a href="https://ftp.denx.de/pub/u-boot/" class="header_link">Stable releases</a></li>
 				<li><a href="https://docs.u-boot.org/" class="header_link">Documentation</a></li>
-				<li><a href="https://libera.irclog.whitequark.org/u-boot" class="header_link">IRC logs</a></li>
+				<li><a href="https://lab.u-boot.org/" class="header_link">Lab</a></li>
 				<li><a href="https://source.denx.de/u-boot/custodians" class="header_link">Custodians</a></li>
 			</ul>
+			<div class="header_int">
+				<p style="font-size: 20px;">
+					<b>Das U-Boot,</b> often shortened to U-Boot, is a free, open-source and extensible boot loader available for many architectures (ARM, MIPS, PowerPC, RISC-V, x86, x86_64), 
+					whose purpose is to perform various hardware initialization tasks and boot the device's operating system kernel. 
+				</p>
+				<div class="releases">
+					<div class="release">
+						<p><i><b>Latest stable release:</b></i></p>
+						<div class="release_ver">
+							<a class="release_link" href="https://source.denx.de/u-boot/u-boot/-/tree/v2023.10?ref_type=tags">v2025.10</a>
+							<br/>
+							<small>(<a href="https://source.denx.de/u-boot/u-boot/-/archive/v2025.10/u-boot-v2025.10.tar.gz">download</a>), released 06 October 2025</small>
+						</div>
+					</div>
+					<div class="release">
+						<p><i><b>Latest release candidate:</b></i></p>
+						<div class="release_ver">
+							<a class="release_link" href="https://source.denx.de/u-boot/u-boot/-/tree/v2026.01-rc5?ref_type=tags">v2026.01-rc5</a>
+							<br/>
+							<small>(<a href="https://source.denx.de/u-boot/u-boot/-/archive/v2023.10/u-boot-v2026.01-rc5.tar.gz">download</a>), released 22 December 2025</small>
+						</div>
+					</div>
+				</div>
+				<a href="https://docs.u-boot.org/en/latest/develop/release_cycle.html">Learn more about U-Boot releases</a>
+				<form action="https://www.paypal.com/donate" method="post" target="_top">
+					<input type="hidden" name="hosted_button_id" value="H4678A9YMWRZS" />
+					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+					<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+				</form>
+			</div>
 		</header>
-		<hr/>
 		<main>
+			<h2>Development/Usage resources</h2>
 			<p>
-				Welcome to U-Boot's website.
-				<br/>
-				Das U-Boot, often shortened to U-Boot, is a free and open-source boot loader for various embedded devices, 
-				whose purpose is to perform various hardware initialization tasks and boot the device's operating system kernel. 
+				Multiple resources to aid development and usage of U-Boot are available.
 			</p>
-			<p>
-				U-Boot is loaded from a supported storage device, such as a microSD card or SPI flash, and the operating system kernel is 
-				loaded from a storage device supported by U-Boot on the particular system, such as a microSD card or eMMC chip. 
-			</p>
-			<p>
-				U-Boot also provides a command-line interface on the system console or serial port, which allows the user to interact with 
-				the boot process in various ways.
-			</p>
-			<p>
-				Often described as the universal boot loader, U-Boot is available for many architectures, including ARM, MIPS, PowerPC, 
-				RISC-V, x86 and x86_64. If you want to learn more about U-Boot, you may wish to read the <a href="https://en.wikipedia.org/wiki/Das_U-Boot">Wikipedia U-Boot article</a>
-			</p>
-			<h2>Current status</h2>
-			<p>
-				<b>Latest stable release:</b> <a href="https://source.denx.de/u-boot/u-boot/-/tree/v2023.10?ref_type=tags">v2023.10</a> (<a href="https://source.denx.de/u-boot/u-boot/-/archive/v2023.10/u-boot-v2023.10.tar.gz">download</a>), released Mon 02 October 2023
-				<br/>
-				<b>Latest release candidate:</b> <a href="https://source.denx.de/u-boot/u-boot/-/tree/v2024.01-rc2?ref_type=tags">v2024.01-rc2</a> (<a href="https://source.denx.de/u-boot/u-boot/-/archive/v2024.01-rc2/u-boot-v2024.01-rc2.tar.gz">download</a>), released Mon 06 November 2023
-				<br/>
-				Merge window is <b>CLOSED</b>, <a href="https://source.denx.de/u-boot/u-boot/-/tree/next?ref_type=heads"><code>next</code></a> branch is <b>OPEN</b>
-			</p>
+			<div class="contrib">
+				<div class="contrib_item1">
+					<h3>Documentation</h3>
+					<p>
+						The complete up-to-date documentation is available at
+						<a href="https://docs.u-boot.org">docs.u-boot.org</a>.
+					</p>
+					<p>
+						This includes user-oriented documentation for users that want to get U-Boot running on their system,
+						and developer-oriented documentation for those who want to contribute.
+					</p>
+					<p>
+						Improvements to the documentation are welcome, reach out to us if you want to help out!
+					</p>
+				</div>
+				<div class="contrib_item2">
+					<h3>Source code</h3>
+					<p>
+						U-Boot's source code is licensed under the GNU General Public License v2 or-later, and it is freely available for anyone to dive in.
+					</p>
+					<p>
+						There are also multiple <i>Custodian</i> trees for specific SoC support or feature support in U-Boot.
+						You can also browse the complete source code tree using the <a href="https://elixir.bootlin.com/u-boot">Elixir Cross Referencer</a>
+					</p>
+					<ul>
+						<li><a href="https://source.denx.de/u-boot/u-boot.git">Main tree</a></li>
+						<li><a href="https://source.denx.de/u-boot/custodians">Custodians</a></li>
+						<li><a href="https://source.denx.de/groups/u-boot/-/issues">Issue tracker</a></li>
+					</ul>
+				</div>
+			</div>
 			<h2>Get involved</h2>
 			<p>
 				There are different ways to get involved in the U-Boot community, as described below.
 			</p>
-			<h3>Mailing lists</h3>
-			<p>
-				To post to the mailing list, send your email messages to <a href="mailto:u-boot@lists.denx.de">u-boot@lists.denx.de</a>.
-				You may also consider <a href="https://lists.denx.de/listinfo/u-boot">subscribing</a>.
-				<br/>
-				U-Boot custodian trees also have their own mailing list.
-			</p>
-			<h4>Mailing list archives</h4>
-			<ul>
-				<li><a href="https://lists.denx.de/pipermail/u-boot/">lists.denx.de</a></li>
-				<li><a href="https://lore.kernel.org/u-boot">lore.kernel.org</a></li>
-				<li><a href="https://www.mail-archive.com/u-boot@lists.denx.de/">mail-archive.com</a></li>
-				<li><a href="https://marc.info/?l=u-boot">marc.info</a></li>
-			</ul>
-			<h3>Chat with us</h3>
-			<p>
-				The IRC channel is on the <a href="https://libera.chat">Libera.Chat</a> IRC network. Use the following parameters in your IRC client:
-			</p>
-			<ul>
-				<li>Server: <code>irc.libera.chat</code></li>
-				<li>Ports: <code>6667</code> (plain) and <code>6697</code> (TLS, recommended)</code></li>
-				<li>Channel: <code>#u-boot</code></li>
-			</ul>
-			<p>
-				<a href="https://libera.irclog.whitequark.org/u-boot">Archived logs</a> of this channel are also available.
-			</p>
+			<div class="contrib">
+				<div class="contrib_item1">
+					<h3>Mailing lists</h3>
+					<p>
+						To post to the mailing list, send your email messages to 
+					</p>
+					<ul>
+						<li><a href="mailto:u-boot@lists.denx.de">u-boot@lists.denx.de</a> (<a href="https://lore.kernel.org/u-boot/">archive</a>)</li>
+					</ul>
+					<p>
+						You may also consider <a href="https://lists.denx.de/listinfo/u-boot">subscribing</a>. U-Boot custodian trees also have their own mailing list.
+					</p>
+				</div>
+				<div class="contrib_item2">
+					<h3>Chat with us</h3>
+					<p>
+						Join us in the <b>#u-boot</b> channel on the <a href="https://libera.chat">Libera.Chat</a> IRC network. You can join using the <a href="https://web.libera.chat/#u-boot">Libera.Chat web client</a> (<a href="https://web.libera.chat/gamja">alt</a>) or <a href="ircs://irc.libera.chat/u-boot">your favourite IRC client</a>.
+					</p>
+					<p>
+						<a href="https://libera.irclog.whitequark.org/u-boot">Archived logs</a> of this channel are also available, which can be used to catch up on what happened in the channel while offline, or for searching in the various discussions that happen there.
+					</p>
+				</div>
+			</div>
+			<h2>Donate</h2>
 		</main>
-		<hr/>
 		<footer>
-			Copyright © 2023, The U-Boot development community
+			Copyright © 2025, The U-Boot development community
+			<br/>
+			U-Boot is a member of the <a href="https://sfconservancy.org/">Software Freedom Conservancy</a>.
+			<ul>
+				<li><a href="index.html">Main page</a></li>
+				<li><a href="privacy.html">Privacy policy</a></li>
+			</ul>
 		</footer>
 	</body>
 </html>
