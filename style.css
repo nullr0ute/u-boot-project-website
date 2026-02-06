@@ -139,6 +139,13 @@ a:hover {
 	text-decoration: none;
 }
 
+img.contrib_img {
+	height: 250px;
+	width: 400px;
+	margin: 20px;
+	border: 4px solid #046;
+}
+
 h1, h2, h3, h4, h5, hr, footer {
 	background: #046;
 	border-bottom: 8px solid #dd9955;
