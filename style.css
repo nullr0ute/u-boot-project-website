@@ -10,14 +10,15 @@ body {
 }
 
 header {
-	background: #046;
 	border-bottom: 8px dashed #dd9955;
+	background: #046;
 	color: white;
 	padding: 2em 20px;
 	margin: 0;
 }
 
 main {
+	background: #fff;
 	max-width: 120ch;
 	margin: 0 auto;
 }
@@ -97,6 +98,7 @@ header ul li a.header_link:hover {
 header div.header_title h1 {
 	font-size: 50pt;
 	border: none;
+	color: white;
 }
 header div.header_title small {
 	font-size: 14pt;
@@ -126,6 +128,7 @@ pre:has(code) {
 footer {
 	background: #046;
 	border-top: 8px dashed #dd9955;
+	border-bottom: 8px dashed #dd9955;
 	text-align: center;
 	color: white;
 	padding: 2em 20px;
@@ -160,11 +163,10 @@ img.contrib_img {
 }
 
 h1, h2, h3, h4, h5, hr {
-	background: #046;
-	border-left: 8px solid #dd9955;
-	color: white;
-	padding: 0px 5px;
-	margin: 10px -5px;
+	border-bottom: 4px solid #046;
+	color: #046;
+	padding: 0px 10px;
+	margin: 10px -10px;
 }
 
 /* Make it responsive */
