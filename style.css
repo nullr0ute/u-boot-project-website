@@ -1,38 +1,41 @@
 /*
- * Copyright (C) 2023, Ferass El Hafidi <vitali64pmemail@protonmail.com>
- *
- * SPDX-License-Identifier: GPL-2.0+
+ * SPDX-License-Identifier: CC-BY-4.0
  */
 
 body {
 	font-family: sans-serif;
-	max-width: 120ch;
-	margin: 0 auto;
 	line-height: 1.7;
-	padding: 0 5px;
+	padding: 0;
+	margin: 0;
 }
 
 header {
 	background: #046;
-	border-bottom: 8px solid #dd9955;
+	border-bottom: 8px dashed #dd9955;
 	color: white;
 	padding: 2em 20px;
-	margin: 0 -5px;
+	margin: 0;
 }
 
 main {
-	margin: 5px;
+	max-width: 120ch;
+	margin: 0 auto;
 }
 
 /* Flexbox magic */
 main div.contrib {
 	display: flex;
 	justify-content: space-evenly;
+	flex-direction: row;
 }
 
-main div.contrib div {
+main div.contrib_reverse {
+	flex-direction: row-reverse;
+}
+
+main div.contrib_txt {
 	padding: 10px;
-	width: 50em;
+	width: 100%;
 }
 
 header ul.header_links, header div.header_title {
@@ -43,18 +46,19 @@ header ul.header_links, header div.header_title {
 	white-space: nowrap;
 }
 
-header div.header_int {
-	padding: 2em;
-	text-align: center;
+header div.header_main {
+	display: flex;
+	justify-content: space-around;
+	max-width: 120ch;
+	margin: 0 auto;
 }
 
-header div.header_int div.releases {
-	display: flex;
-	justify-content: space-evenly;
+header div.header_int {
+	padding: 2em;
 }
 
 header div.release {
-	border: 2px solid #dd9955;
+	border-left: 8px solid #dd9955;
 	padding: 1em 2em;
 	margin: 0.1em;
 	width: 18em;
@@ -83,7 +87,6 @@ header ul li a.header_link {
 	padding: 10px;
 	color: white;
 	font-weight: bold;
-	border: 2px solid #dd9955;
 }
 
 header ul li a.header_link:hover {
@@ -92,50 +95,60 @@ header ul li a.header_link:hover {
 
 /* Header text */
 header div.header_title h1 {
-	margin: 1px 9px;
+	font-size: 50pt;
 	border: none;
-	font-size: 30pt;
 }
-header div.header_title h1 small {
-	font-size: 15pt;
+header div.header_title small {
+	font-size: 14pt;
 	font-weight: normal;
+	font-family: monospace;
+}
+
+header div.header_title div {
+	margin: 1px 20px;
 }
 
 /* Header image */
 header div.header_title img {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 }
 
 /* Misc... */
-code {
+pre:has(code) {
 	font-size: 11.5pt;
 	background: #ddd;
-	padding: 0.5pt;
+	padding: 2px 20px;
 	border: 1px solid #ccc;
 	border-radius: 3px;
 }
 
-hr {
-	border: none;
+footer {
+	background: #046;
+	border-top: 8px dashed #dd9955;
+	text-align: center;
+	color: white;
+	padding: 2em 20px;
 }
 
-footer a, header a {
+footer a {
 	color: white;
+}
+
+footer ul {
+	list-style: none;
+	padding: 0;
 }
 
 a {
 	font-weight: bold;
 	color: #046;
-	padding: 2px 2px;
 	white-space: nowrap;
 	transition: color 0.2s, background 0.2s ;
 }
 
 a:hover {
 	background: #dd9955;
-	padding: 2px 2px;
-	color: white;
 	text-decoration: none;
 }
 
@@ -146,16 +159,16 @@ img.contrib_img {
 	border: 4px solid #046;
 }
 
-h1, h2, h3, h4, h5, hr, footer {
+h1, h2, h3, h4, h5, hr {
 	background: #046;
-	border-bottom: 8px solid #dd9955;
+	border-left: 8px solid #dd9955;
 	color: white;
 	padding: 0px 5px;
 	margin: 10px -5px;
 }
 
 /* Make it responsive */
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
 	header,
 	header ul.header_links {
 		white-space: wrap;
@@ -171,8 +184,9 @@ h1, h2, h3, h4, h5, hr, footer {
 	header * {
 		flex-direction: column;
 	}
-	div.contrib {
+	main div.contrib, main div.contrib_reverse {
 		flex-direction: column;
+		align-items: center;
 	}
 	main div.contrib div {
 		padding: 0;

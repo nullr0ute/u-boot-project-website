@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<!-- SPDX-License-Identifier: GPL-2.0+ -->
+<!-- SPDX-License-Identifier: CC-BY-4.0 -->
 <html lang="en">
 	<head>
 		<link rel="stylesheet" href="style.css">
@@ -10,23 +10,17 @@
 	</head>
 	<body>
 		<header>
-			<div class="header_title">
-				<img src="u-boot_logo.png" alt="U-Boot logo">
-				<h1>Das U-Boot <small><i>The Universal Boot Loader</i></small></h1>
-			</div>
-			<ul class="header_links">
-				<li><a href="https://source.denx.de/u-boot" class="header_link">Source</a></li>
-				<li><a href="https://ftp.denx.de/pub/u-boot/" class="header_link">Stable releases</a></li>
-				<li><a href="https://docs.u-boot.org/" class="header_link">Documentation</a></li>
-				<li><a href="https://lab.u-boot.org/" class="header_link">Lab</a></li>
-				<li><a href="https://source.denx.de/u-boot/custodians" class="header_link">Custodians</a></li>
-			</ul>
-			<div class="header_int">
-				<p style="font-size: 20px;">
-					<b>Das U-Boot,</b> often shortened to U-Boot, is a free, open-source and extensible boot loader available for many architectures (ARM, MIPS, PowerPC, RISC-V, x86, x86_64), 
-					whose purpose is to perform various hardware initialization tasks and boot the device's operating system kernel. 
-				</p>
-				<div class="releases">
+			<div class="header_main">
+				<div class="header_title">
+					<img src="u-boot_logo.png" alt="U-Boot logo">
+					<div>
+						<h1>Das U-Boot</h1>
+						<small>The Universal Boot Loader</small>
+					</div>
+				</div>
+				<div class="header_int">
+					<p style="font-size: 17pt;"><b>Das U-Boot,</b> often shortened to U-Boot, is a free, open-source and extensible boot loader available for many architectures (ARM, MIPS, PowerPC, RISC-V, x86, x86_64), 
+						whose purpose is to perform various hardware initialization tasks and boot the device's operating system kernel.</p>
 					<div class="release">
 						<p><i><b>Latest stable release:</b></i></p>
 						<div class="release_ver">
@@ -35,22 +29,17 @@
 							<small>(<a href="https://source.denx.de/u-boot/u-boot/-/archive/v2025.10/u-boot-v2025.10.tar.gz">download</a>), released 06 October 2025</small>
 						</div>
 					</div>
-					<div class="release">
-						<p><i><b>Latest release candidate:</b></i></p>
-						<div class="release_ver">
-							<a class="release_link" href="https://source.denx.de/u-boot/u-boot/-/tree/v2026.01-rc5?ref_type=tags">v2026.01-rc5</a>
-							<br/>
-							<small>(<a href="https://source.denx.de/u-boot/u-boot/-/archive/v2023.10/u-boot-v2026.01-rc5.tar.gz">download</a>), released 22 December 2025</small>
-						</div>
-					</div>
 				</div>
-				<a href="https://docs.u-boot.org/en/latest/develop/release_cycle.html">Learn more about U-Boot releases</a>
-				<form action="https://www.paypal.com/donate" method="post" target="_top">
-					<input type="hidden" name="hosted_button_id" value="H4678A9YMWRZS" />
-					<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-					<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
-				</form>
 			</div>
+			<ul class="header_links">
+				<li><a href="https://source.denx.de/u-boot" class="header_link">Source</a></li>
+				<li><a href="https://ftp.denx.de/pub/u-boot/" class="header_link">Download</a></li>
+				<li><a href="https://docs.u-boot.org/" class="header_link">Documentation</a></li>
+				<li><a href="https://lists.denx.de/listinfo/u-boot" class="header_link">Mailing list</a></li>
+				<li><a href="ircs://irc.libera.chat/u-boot" class="header_link">IRC channel</a></li>
+				<li><a href="https://source.denx.de/u-boot/custodians" class="header_link">Custodians</a></li>
+				<li><a href="privacy.html" class="header_link">Privacy policy</a></li>
+			</ul>
 		</header>
 		<main>
 			<h2>Development/Usage resources</h2>
@@ -58,7 +47,7 @@
 				Multiple resources to aid development and usage of U-Boot are available.
 			</p>
 			<div class="contrib">
-				<img src="docs.png" class="contrib_img">
+				<img src="docs.png" class="contrib_img" alt="Screenshot of the U-Boot documentation website">
 				<div class="contrib_txt">
 					<h3>Documentation</h3>
 					<p>
@@ -74,7 +63,8 @@
 					</p>
 				</div>
 			</div>
-			<div class="contrib">
+			<div class="contrib contrib_reverse">
+				<img src="src.png" class="contrib_img" alt="A look at U-Boot's GitLab repository">
 				<div class="contrib_txt">
 					<h3>Source code</h3>
 					<p>
@@ -90,14 +80,13 @@
 						<li><a href="https://source.denx.de/groups/u-boot/-/issues">Issue tracker</a></li>
 					</ul>
 				</div>
-				<img src="src.png" class="contrib_img">
 			</div>
 			<h2>Get involved</h2>
 			<p>
 				There are different ways to get involved in the U-Boot community, as described below.
 			</p>
 			<div class="contrib">
-				<img src="ml.png" class="contrib_img">
+				<img src="ml.png" class="contrib_img" alt="A registration form for U-Boot's mailing list">
 				<div class="contrib_txt">
 					<h3>Mailing lists</h3>
 					<p>
@@ -111,7 +100,8 @@
 					</p>
 				</div>
 			</div>
-			<div class="contrib">
+			<div class="contrib contrib_reverse">
+				<img src="Libera_Chat_Logo.svg" class="contrib_img" style="padding: 10px 50px;" alt="Libera.Chat logo (CC0)">
 				<div class="contrib_txt">
 					<h3>Chat with us</h3>
 					<p>
@@ -121,17 +111,16 @@
 						<a href="https://libera.irclog.whitequark.org/u-boot">Archived logs</a> of this channel are also available, which can be used to catch up on what happened in the channel while offline, or for searching in the various discussions that happen there.
 					</p>
 				</div>
-				<img src="https://libera.chat/static/img/libera-color.svg" class="contrib_img">
 			</div>
 		</main>
 		<footer>
-			Copyright © 2025, The U-Boot development community
+			Copyright © The U-Boot development community
 			<br/>
 			U-Boot is a member of the <a href="https://sfconservancy.org/">Software Freedom Conservancy</a>.
-			<ul>
-				<li><a href="index.html">Main page</a></li>
-				<li><a href="privacy.html">Privacy policy</a></li>
-			</ul>
+			<form action="https://www.paypal.com/donate" method="post" target="_top">
+				<input type="hidden" name="hosted_button_id" value="H4678A9YMWRZS" />
+				<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+			</form>
 		</footer>
 	</body>
 </html>
